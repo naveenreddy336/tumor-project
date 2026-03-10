@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Login - Kidney Tumor Detection</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,#1e3c72,#2a5298);
+}
+
+/* Login Box */
+.login-container{
+    width:350px;
+    margin:150px auto;
+    padding:30px;
+    background:#dbeafe;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #999;
+}
+
+/* Login Button */
+button{
+    width:95%;
+    padding:10px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e40af;
+}
+
+.error{
+    color:red;
+    margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+<h2>🔐 Login</h2>
+
+<form method="POST">
+
+<input type="text" name="username" placeholder="Enter Username" required>
+
+<input type="password" name="password" placeholder="Enter Password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<p class="error">{{ error }}</p>
+
+</div>
+
+</body>
+</html>
